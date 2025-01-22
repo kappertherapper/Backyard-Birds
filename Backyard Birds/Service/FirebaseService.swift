@@ -12,7 +12,7 @@ struct FirebaseService {
     private let dbCollection = Firestore.firestore().collection("BirdDetected")
     private var listner: ListenerRegistration?
     
-    mutating func setUpListner(callback: @escaping ([BirdDetected])->Void) {
+    mutating func setUpListner(callback: @escaping ([BirdDetected]) -> Void) {
         listner = dbCollection.addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
                 print("no documents")

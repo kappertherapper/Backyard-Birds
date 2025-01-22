@@ -15,8 +15,8 @@ class BirdController {
     private var firebaseService = FirebaseService()
     
     init() {
-        firebaseService.setUpListner { fetchedUsers in
-            self.birds = fetchedUsers
+        firebaseService.setUpListner { fetchedBirds in
+            self.birds = fetchedBirds
         }
     }
     

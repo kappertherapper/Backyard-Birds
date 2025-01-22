@@ -126,9 +126,8 @@ struct AddBirdView: View {
         .onAppear {
             locationManager.startLocationUpdates()
         }
-            .onChange(of: locationManager.lastLocation) { oldLocation, newLocation in
-                print("Location changed from \(oldLocation) to \(newLocation)")
-                location = newLocation.coordinate
+            .onChange(of: locationManager.lastLocation) {
+                location = locationManager.lastLocation.coordinate
             }
             .onChange(of: selection) { _, _ in
                 Task {
