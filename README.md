@@ -1,8 +1,8 @@
 Birdspotting app
 
-- integreted firebase with add function (delete function is there, but not integreted)
-- a quote frontscreen that gets a random quote every time to enter the ContentView
-- a add bird, for adding a bird spot - it gets and adds your location
-- a list of all birdspot, options to sort after specie or date
-- and you can click in a specific spotbird and you will see a detail view
-- three main views in total (AddBird, BirdDetail, Content)
+* Integrated Firebase with an add function (the delete function exists but is not yet integrated).
+* A quote front screen that displays a random quote each time you enter the ContentView.
+* An Add Bird feature for logging bird sightings — it fetches and saves your current location.
+* A list of all bird spots, with options to sort by species or date.
+* Clicking a specific bird spot opens a detail view.
+* Three main views in total: AddBird, BirdDetail, and Content.
